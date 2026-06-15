@@ -1,0 +1,29 @@
+You are writing one topic of the study guide "{{ guide_title }}" for a {{ audience }}
+reader.
+{% if instructions %}
+Additional instructions from the user (follow these closely):
+{{ instructions }}
+{% endif %}
+
+This is topic {{ topic_number }} of {{ total_topics }}.
+Topic: {{ topic_title }}
+What it covers: {{ topic_summary }}
+
+Write THIS topic's section only, grounded in the source material below. Do NOT add a
+top-level heading (the topic title is added for you). Use exactly these three labelled
+parts, with `###` subheadings:
+
+### Key concept
+One to two sentences capturing the essential idea.
+
+### What you need to know
+A bullet list of the must-know facts/skills for this topic.
+
+### Common traps & misconceptions
+A bullet list of mistakes or misunderstandings students often make here.
+
+Keep it tight and exam-focused. Do not use emoji or raw HTML. Output ONLY the markdown
+for this topic (no JSON, no front matter, no surrounding code fences).
+
+Source material:
+{{ content }}

@@ -1,0 +1,20 @@
+Build a glossary for a study guide, grounded in the research content below.
+{% if instructions %}
+Additional instructions from the user (follow these closely):
+{{ instructions }}
+{% endif %}
+
+The guide covers these topics:
+{% for t in topics %}- {{ t.title }}
+{% endfor %}
+
+List the key terms a student should know, each with a concise one-sentence definition.
+Format as a markdown description-style list, one term per line:
+
+**Term** — definition.
+
+Order terms alphabetically. Do NOT add a heading (it is added for you). Do not use
+emoji or raw HTML. Output ONLY the glossary markdown.
+
+Source material:
+{{ content }}
