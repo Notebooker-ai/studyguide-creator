@@ -125,6 +125,10 @@ class StudyGuideCreator(BaseCreator):
                 )
             ],
             icon="graduation-cap",
+            suggestion_hint=(
+                "what to prioritize for review: which key terms, core concepts, and "
+                "likely exam themes deserve the most space"
+            ),
         )
 
     async def generate(self, request: CreationRequest) -> CreationResult:
