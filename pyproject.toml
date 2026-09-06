@@ -1,6 +1,6 @@
 [project]
 name = "studyguide-creator"
-version = "0.1.0"
+version = "0.2.0"
 license = "MIT"
 description = "Open Notebook creator: LLM-written study guides rendered to HTML/PDF via Quarto (studyguide.v1)"
 readme = "README.md"
